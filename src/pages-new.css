@@ -1,0 +1,67 @@
+/* ---------- shared page hero (Services + Quote) ---------- */
+.kicker { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.8rem; }
+.kicker.dark-text { color: var(--palm); }
+.btn.dark { background: var(--palm); color: #fff; border-radius: 2rem; }
+.btn.outline-light { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.7); border-radius: 2rem; }
+
+.page-hero { position: relative; color: #fff; background-color: var(--palm); background-size: cover; background-position: center right; }
+.page-hero::before { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(14,40,28,0.95) 0%, rgba(14,40,28,0.8) 45%, rgba(14,40,28,0.2) 100%); }
+.page-hero-inner { position: relative; padding-block: 4rem; }
+.page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); max-width: 34rem; }
+.page-hero h1 span { color: #7fc99a; }
+.page-hero-text { max-width: 30rem; margin-top: 1.2rem; color: #e6efe9; }
+.hero-points { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.8rem; font-weight: 600; }
+.hero-points li::before { content: "✓"; display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem;
+  margin-right: 0.5rem; border-radius: 50%; background: #7fc99a; color: var(--palm); font-size: 0.8rem; }
+
+/* ---------- services page ---------- */
+.svc-grid { display: grid; gap: 1.8rem; }
+.svc-card { background: #fff; border: 1px solid #e0e5da; border-radius: 0.7rem; overflow: hidden; position: relative; }
+.svc-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block; }
+.svc-img-empty { background: linear-gradient(150deg, #3a5a47, #1f3a2c); }
+.svc-icon { position: relative; margin: -1.6rem 0 0 1.2rem; width: 3.2rem; height: 3.2rem; display: grid; place-items: center;
+  border-radius: 50%; background: var(--sage); font-size: 1.4rem; border: 3px solid #fff; }
+.svc-body { padding: 0.6rem 1.4rem 1.5rem; }
+.svc-body h2 { font-size: 1.3rem; margin: 0.4rem 0 0.5rem; color: var(--palm); }
+.svc-body p { color: var(--muted); }
+.svc-list { list-style: none; padding: 0; margin-top: 1rem; display: grid; gap: 0.4rem; font-size: 0.95rem; }
+.svc-list li::before { content: "✓"; color: var(--palm); font-weight: 700; margin-right: 0.6rem; }
+.svc-custom { background: var(--sage); border: 0; padding: 2rem 1.6rem; display: grid; align-content: center; gap: 0.9rem; }
+.svc-custom .kicker { color: var(--palm); margin: 0; }
+.svc-custom h2 { font-size: 1.7rem; margin: 0; color: var(--palm); }
+.svc-custom .btn { justify-self: start; }
+
+.svc-band { background: var(--palm); color: #fff; }
+.svc-band-inner { display: grid; gap: 1.2rem; padding-block: 2.5rem; align-items: center; }
+.svc-band h2 { margin: 0 0 0.3rem; font-size: 1.8rem; }
+.svc-band .kicker { color: #bfe0cb; }
+
+/* ---------- quote page ---------- */
+.quote-page { display: grid; gap: 2.5rem; align-items: start; }
+.quote-intro h2 { margin-bottom: 1rem; }
+.why-points { list-style: none; padding: 0; margin-top: 2rem; display: grid; gap: 1.4rem; }
+.why-points li { display: flex; gap: 1rem; align-items: flex-start; }
+.why-icon { flex: none; width: 3.4rem; height: 3.4rem; display: grid; place-items: center; border-radius: 50%; background: var(--sage); font-size: 1.4rem; }
+
+.qform { background: #fff; border: 1px solid #e0e5da; border-radius: 0.8rem; padding: 1.6rem; display: grid; gap: 1.1rem;
+  box-shadow: 0 8px 30px rgba(20, 38, 29, 0.07); }
+.qform h2 { margin: 0; font-size: 1.8rem; }
+.qform label, .qform legend { font-weight: 600; font-size: 0.95rem; display: grid; gap: 0.35rem; }
+.qform b { color: #c0392b; }
+.qform input:not([type="radio"]), .qform textarea { font: inherit; font-weight: 400; padding: 0.75rem 0.9rem; border: 1px solid #d3d9cc; border-radius: 0.4rem; background: #fff; }
+.qform fieldset { border: 0; padding: 0; display: grid; gap: 0.6rem; }
+.qf-row { display: grid; gap: 1.1rem; }
+.radio-grid { display: grid; gap: 0.5rem 1.5rem; }
+.qform .radio { display: flex; align-items: center; gap: 0.6rem; font-weight: 400; }
+.qform .radio input { accent-color: var(--palm); width: 1.1rem; height: 1.1rem; }
+.qf-submit { width: 100%; padding: 1rem; font-size: 1.05rem; }
+.qf-note { text-align: center; font-size: 0.85rem; }
+
+@media (min-width: 48rem) {
+  .svc-grid { grid-template-columns: repeat(3, 1fr); }
+  .svc-band-inner { grid-template-columns: 1fr auto; }
+  .quote-page { grid-template-columns: 0.9fr 1.1fr; }
+  .qf-row { grid-template-columns: 1fr 1fr; }
+  .radio-grid { grid-template-columns: 1fr 1fr; }
+}

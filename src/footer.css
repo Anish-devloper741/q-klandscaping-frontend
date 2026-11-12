@@ -1,0 +1,33 @@
+/* ---------- site footer ---------- */
+.site-footer { background: #0d2a1f; color: #e6efe9; padding-top: 4rem; }
+.footer-grid { display: grid; gap: 2.5rem; }
+.footer-kicker { color: #8fd4a8; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 1rem; }
+.footer-brand h2 { color: #fff; font-size: clamp(1.7rem, 3vw, 2.1rem); margin-bottom: 1rem; max-width: 26rem; }
+.footer-brand h2 span { color: #8fd4a8; }
+.footer-brand p:not(.footer-kicker) { max-width: 24rem; color: #d3e0d8; }
+.footer-social { display: flex; gap: 0.8rem; margin-top: 1.5rem; }
+.footer-social a { width: 2.7rem; height: 2.7rem; display: grid; place-items: center; border-radius: 50%;
+  background: #b8e6c8; color: #0d2a1f; transition: transform 0.15s; }
+.footer-social a:hover { transform: translateY(-2px); }
+
+.footer-col h3 { font-family: var(--body); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: #8fd4a8; margin: 0 0 1.2rem; }
+.footer-col ul { list-style: none; padding: 0; display: grid; gap: 0.9rem; }
+.footer-col a { text-decoration: none; color: #fff; display: inline-flex; align-items: center; gap: 0.6rem; }
+.footer-col ul:not(.footer-contact) a:hover { color: #8fd4a8; }
+.footer-col ul:not(.footer-contact) svg { width: 1rem; height: 1rem; }
+
+.footer-contact li { display: flex; align-items: center; gap: 0.9rem; }
+.footer-contact small { display: block; color: #b7cbbf; font-size: 0.85rem; }
+.footer-contact a { display: block; }
+.fc-icon { flex: none; width: 2.6rem; height: 2.6rem; display: grid; place-items: center; border-radius: 50%;
+  background: #8fd4a8; color: #0d2a1f; }
+
+.footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem; margin-top: 3rem;
+  padding-block: 1.5rem 5rem; border-top: 1px solid rgba(143, 212, 168, 0.3); font-size: 0.95rem; }
+.footer-tagline { letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem; color: #8fd4a8; font-weight: 600; }
+.footer-tagline span { margin-inline: 0.6rem; color: #e6efe9; }
+
+@media (min-width: 48rem) {
+  .footer-grid { grid-template-columns: 1.3fr 0.8fr 1.1fr 1.1fr; }
+}
