@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import "./admin.css";
 
 // Backend address (set VITE_API_URL in the frontend .env file)
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://q-klandscaping-backend.vercel.app/";
 const TOKEN_KEY = "qk_admin_token";
 const EMAIL_KEY = "qk_admin_email";
 
