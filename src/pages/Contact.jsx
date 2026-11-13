@@ -6,7 +6,7 @@ import heroImg from "../assets/projects/ModernVillaGarden/ModernVillaGarden.png"
 import Seo from "../components/seo/Seo";
 
 // Backend address (set VITE_API_URL in the frontend .env file)
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = import.meta.env.VITE_API_URL || "https://q-klandscaping-backend.vercel.app/";
 
 const SERVICE_OPTIONS = [
   "Luxury Swimming Pool",
