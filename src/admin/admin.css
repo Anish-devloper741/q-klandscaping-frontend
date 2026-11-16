@@ -63,6 +63,17 @@
 }
 .adm-logo.small { width: 36px; height: 36px; border-radius: 10px; font-size: 0.8rem; }
 
+/* Password box with show/hide button */
+.adm-pass { position: relative; margin-top: 6px; }
+.adm .adm-pass input { padding-right: 46px; margin-top: 0; }
+.adm .adm-eye {
+  position: absolute; right: 6px; top: 50%; transform: translateY(-50%);
+  width: 34px; height: 34px; display: grid; place-items: center;
+  background: none; border: 0; border-radius: 8px; color: var(--adm-muted); cursor: pointer;
+}
+.adm .adm-eye:hover { color: var(--adm-text); background: #eef2ee; }
+.adm .adm-eye svg { width: 20px; height: 20px; }
+
 /* Layout */
 .adm-shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
 .adm-side {
